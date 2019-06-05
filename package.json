@@ -7,6 +7,7 @@
   "scripts": {
     "build": "tsc -b",
     "dev:client": "(cd client/ && webpack-dev-server)",
-    "dev:server": "nodemon lib/server/src/index.js"
+    "dev:server": "(cd server/ && tsc -w & nodemon lib/server/src/index.js)",
+    "test": "(cd test/ && tsc -w & nodemon lib/test/index.js)"
   }
 }
