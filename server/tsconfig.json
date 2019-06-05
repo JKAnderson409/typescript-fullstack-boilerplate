@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../lib/server"
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "references": [
+    { "path": "../client" }
+  ]
+}
