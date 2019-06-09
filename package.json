@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A boilerplate for typescript with project references with functioning React, Webpack and Express.",
   "author": "Jeff Anderson",
-  "license": "MIT",
+  "license": "none",
   "scripts": {
     "install": "(cd client/ && npm install)",
     "build": "tsc -b",
