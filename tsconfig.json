@@ -1,24 +1,25 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "composite": true,
     "declaration": true,
     "declarationMap": true,
+    "noEmitOnError": false,
     "jsx": "react",
-    "module": "es6",
+    "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "strict": true,
     "sourceMap": true,
     "target": "es5",
-    "noUnusedLocals": true,
+    // "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./lib",
     "lib": [
       "dom",
       "es2018"
-    ],
+    ]
   },
   "references": [
     {

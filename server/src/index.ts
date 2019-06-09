@@ -1,9 +1,11 @@
-import ClientStr from '../../client/src';
+import { Server } from 'ws';
 
-type ServerStr = 'server';
+import ClientType from 'client/src/'
 
-const clientStr: ClientStr = 'client';
+type ServerType = 'server';
 
-console.log( `Server has types from ${ clientStr }!` );
+const clientStr: ClientType = 'client';
 
-export default ServerStr;
+console.log( `Server has types from ${clientStr}!` );
+
+export default ServerType;

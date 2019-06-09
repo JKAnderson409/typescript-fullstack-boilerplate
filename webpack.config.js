@@ -5,9 +5,9 @@ module.exports = {
   mode: 'development',
   watch: true,
   target: 'web',
-  entry: './src/index.tsx',
+  entry: './lib/client/src/index.js',
   output: {
-    path: path.resolve( __dirname, '../dist/client' ),
+    path: path.resolve( __dirname, './dist/client' ),
     filename: 'index.js'
   },
   optimization: {
@@ -21,7 +21,8 @@ module.exports = {
     port: 8080
   },
   resolve: {
-    extensions: [ '.js', '.ts', '.tsx' ]
+    extensions: [ '.js', '.ts', '.tsx' ],
+    modules: [ 'node_modules' ]
   },
   module: {
     rules: [
@@ -30,7 +31,7 @@ module.exports = {
         loader: 'ts-loader'
       },
       {
-        test: /\.css$/,   
+        test: /\.css$/,
         use: [ 'style-loader', 'css-loader' ]
       },
       {

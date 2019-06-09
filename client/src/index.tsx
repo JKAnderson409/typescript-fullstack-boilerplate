@@ -1,7 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 import { render } from 'react-dom';
 
-type ClientStr = 'client';
+type ClientType = 'client';
 
 const root: HTMLDivElement = document.createElement( 'div' );
 root.id = 'root';
@@ -9,4 +9,4 @@ document.body.appendChild( root );
 
 render( <p>Client is running!</p>, root )
 
-export default ClientStr;
+export default ClientType;

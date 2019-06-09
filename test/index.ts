@@ -1,7 +1,7 @@
-import ClientStr from '../client/src';
-import ServerStr from '../server/src';
+import ClientType from 'client/src';
+import ServerType from 'server/src';
 
-const clientStr: ClientStr = 'client';
-const serverStr: ServerStr = 'server';
+const clientStr: ClientType = 'client';
+const serverStr: ServerType = 'server';
 
 console.log( `Test has types from ${ clientStr } and ${ serverStr }!` );
