@@ -1,5 +1,3 @@
-import { Server } from 'ws';
-
 import ClientType from 'client/src/'
 
 type ServerType = 'server';
