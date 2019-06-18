@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   watch: true,
   target: 'web',
-  entry: './lib/client/src/index.js',
+  entry: './client/src/index.tsx',
   output: {
     path: path.resolve( __dirname, './dist/client' ),
     filename: 'index.js'
