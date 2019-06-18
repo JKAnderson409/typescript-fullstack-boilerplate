@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc --build --watch",
     "dev:client": "webpack-dev-server",
-    "dev:server": "nodemon lib/server/src/index.js",
+    "dev:server": "nodemon --delay 1 --watch lib/server/ lib/server/src/index.js",
     "prod:client": "webpack --mode production",
     "test": "nodemon lib/test/index.js"
   },
