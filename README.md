@@ -18,24 +18,24 @@ The client exports type defintions but cannot import from server or test because
 root/
 |  package.json
 |  tsconfig.json
-|__client/
+|  client/
 |  |  tsconfig.json
 |  |  webpack.config.js
-|  |__src/
+|  |  src/
 |     |  index.tsx
 |__server/
 |  |  tsconfig.json
-|  |__src/
+|  |  src/
 |     |  index.ts
 |__test/
 |  |  tsconfig.json
 |  |  index.ts
 |__lib/*
-|  |__client/*
-|  |__server/*
-|  |__test/*
+|  |  client/*
+|  |  server/*
+|  |  test/*
 |__dist/**
-   |__client/**
+   |  client/**
 * Created by build script, contains tsconfig.tsbuildinfo and mirrors its build source
 ** Output by webpack production script
 ```
@@ -43,6 +43,8 @@ root/
 ## Prerequisites
 
 * [Nodemon](https://www.npmjs.com/package/nodemon) - Most Node.JS users already have this installed globally, but "nodemon" can be replaced with "node" in the dev:server and dev:test scripts.
+
+*[Typescript/Webpack] - The scripts assume that you have "tsc" and "webpack-dev-server" commands available in your PATH.
 
 ## Usage
 
